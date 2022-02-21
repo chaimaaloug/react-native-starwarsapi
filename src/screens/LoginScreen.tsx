@@ -21,8 +21,8 @@ export default function LoginScreen () {
          <Headline style={styles.headline}>Welcome to StartPort</Headline>
       </View>
 
-        <View>
-            <View style={styles.form}>
+        <React.Fragment>
+            <React.Fragment>
                 <TextInput autoComplete={true} style={styles.input} label="Email" value={text}
                 onChangeText={text => setText(text)}/>
                 <TextInput  autoComplete={true} style={styles.input} label="Password" value={text}
@@ -30,9 +30,9 @@ export default function LoginScreen () {
                 <Button mode="contained" onPress={() => console.log('Pressed')}>
                 Login
                 </Button>  
-            </View>
+            </React.Fragment>
                 <Text style={styles.parag}>Read Conditions and Terms </Text>
-        </View> 
+        </React.Fragment> 
     </ScrollView>
    
   );
@@ -40,7 +40,7 @@ export default function LoginScreen () {
 }
   
   
-
+//  // using </> is just like using </React.Fragment>
 
 
 const styles = StyleSheet.create({
@@ -66,8 +66,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     
  },
-
-
 
  parag: {
    textAlign: "center",
