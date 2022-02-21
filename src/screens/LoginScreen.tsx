@@ -21,7 +21,7 @@ export default function LoginScreen () {
          <Headline style={styles.headline}>Welcome to StartPort</Headline>
       </View>
 
-        <React.Fragment>
+        <View style={styles.form}>
             <React.Fragment>
                 <TextInput autoComplete={true} style={styles.input} label="Email" value={text}
                 onChangeText={text => setText(text)}/>
@@ -32,7 +32,7 @@ export default function LoginScreen () {
                 </Button>  
             </React.Fragment>
                 <Text style={styles.parag}>Read Conditions and Terms </Text>
-        </React.Fragment> 
+        </View> 
     </ScrollView>
    
   );
