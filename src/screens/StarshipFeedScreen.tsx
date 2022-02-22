@@ -1,20 +1,25 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, Text, StatusBar, View, FlatList } from "react-native";
+import {Card } from 'react-native-paper';
 
-// import { default as data } from "../../api/data2.json";
-import { useStarships } from "../hooks/useStartships";
+import { useStarships } from "../hooks/useStarships";
 
 const renderItem = ({ item }) => {
   
   return (
-    <View>
-    <Text> {item.name} </Text>
-    <Text> {item.model} </Text>
-    <Text> {item.crew} </Text>
-    <Text> {item.hyperdrive_rating} </Text>
-    <Text> {item.cost_in_credits} </Text>
+ 
+    <Card style={styles.card}>
+      <Card.Content>
+      <Text style={styles.title}>{item.name}</Text>
+      <Text>{item.model}</Text>
+      <Text>{item.cost_in_credits}</Text>
+      <Text>{item.crew}</Text>
+      <Text>{item.hyperdrive_rating}</Text>
+      <Text>{item.cost_in_credits}</Text>
+      </Card.Content>
+    </Card>
 
-  </View>
+  
   )
   };
 
@@ -22,14 +27,13 @@ export const StarshipFeedScreen = () => {
   const {isLoading, isError, data}= useStarships()
    console.log("bonjour", isLoading)
    console.log("bonjour", data)
-
+  
   if (isLoading) {
-    <Text>loading</Text>
+   return  <Text>loading</Text>
   }
 
-
   if (isError) {
-    <Text>we are sorry something bad happend ... </Text>
+    return <Text>We are sorry something bad happend ... </Text>
   }
  console.log(data)
 
@@ -56,4 +60,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginTop: 20,
   },
+  card: {
+    backgroundColor: "#D3D3D3",
+    marginBottom: 20,
+  },
+
+  title: {
+    fontWeight: "bold",
+    fontSize: 25,
+    marginBottom: 12,
+  },
+
 });

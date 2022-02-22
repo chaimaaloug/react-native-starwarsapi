@@ -14,7 +14,6 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 const App = () => {
   // return <LoginScreen />; 
   // return <TermsScreen />;
-
   // return <WhatEverScreen />;
 
   return <QueryClientProvider client={queryClient}><StarshipFeedScreen /></QueryClientProvider>
