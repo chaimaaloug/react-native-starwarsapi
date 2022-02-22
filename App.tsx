@@ -6,11 +6,18 @@ import { TermsScreen } from './src/screens/TermsScreen';
 
 
 
+import { QueryClient, QueryClientProvider } from 'react-query'
+ 
+ const queryClient = new QueryClient()
+ 
+
 const App = () => {
   // return <LoginScreen />; 
   // return <TermsScreen />;
-  return <StarshipFeedScreen />;
+
   // return <WhatEverScreen />;
+
+  return <QueryClientProvider client={queryClient}><StarshipFeedScreen /></QueryClientProvider>
 };
 
 export default App;
