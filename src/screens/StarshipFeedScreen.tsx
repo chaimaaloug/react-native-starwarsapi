@@ -11,11 +11,11 @@ const renderItem = ({ item }) => {
     <Card style={styles.card}>
       <Card.Content>
       <Text style={styles.title}>{item.name}</Text>
-      <Text>{item.model}</Text>
-      <Text>{item.cost_in_credits}</Text>
-      <Text>{item.crew}</Text>
-      <Text>{item.hyperdrive_rating}</Text>
-      <Text>{item.cost_in_credits}</Text>
+      <Text style={styles.txt}>{item.model}</Text>
+      <Text style={styles.txt}>{item.cost_in_credits}</Text>
+      <Text style={styles.txt}>{item.crew}</Text>
+      <Text style={styles.txt}>{item.hyperdrive_rating}</Text>
+      <Text style={styles.txt}>{item.cost_in_credits}</Text>
       </Card.Content>
     </Card>
 
@@ -61,13 +61,20 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   card: {
-    backgroundColor: "#D3D3D3",
+    backgroundColor: "#7B5095",
     marginBottom: 20,
+  },
+
+  txt:{
+    color:"#ffb687",
+    fontWeight: "bold",
   },
 
   title: {
     fontWeight: "bold",
     fontSize: 25,
+    color:"#ffb687",
+    
     marginBottom: 12,
   },
 
