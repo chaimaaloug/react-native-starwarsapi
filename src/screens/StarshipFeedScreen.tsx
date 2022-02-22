@@ -7,7 +7,8 @@ export const StarshipFeedScreen = () => {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
-        <Text>{JSON.stringify(data.results)}</Text>
+
+        {/* <Text>{JSON.stringify(data.results)}</Text> */}
       </View>
     </SafeAreaView>
   );
