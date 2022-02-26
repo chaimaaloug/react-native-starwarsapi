@@ -34,9 +34,9 @@ export default function LoginScreen (props) {
 
         <View style={styles.form}>
             <React.Fragment>
-                <TextInput autoComplete={true} style={styles.input} label="Email" value={text}
+                <TextInput autoComplete={true} underlineColorAndroid = "transparent" style={styles.input} label="Email" placeholderTextColor = "#F2DD65" value={text}
                 onChangeText={text => setText(text)}/>
-                <TextInput  autoComplete={true} style={styles.input} label="Password" value={text}
+                <TextInput  autoComplete={true} underlineColorAndroid = "transparent" style={styles.input} label="Password" placeholderTextColor = "#F2DD65" value={text}
                 onChangeText={text => setText(text)}/>
 
                 <Button mode="contained" style={styles.btn} onPress={navigateToFeed}>
@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
 
   input: {
     marginBottom: 20,
+   
     
  },
 

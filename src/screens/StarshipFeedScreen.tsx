@@ -53,29 +53,31 @@ export const StarshipFeedScreen = () => {
 
 const styles = StyleSheet.create({
   safeContainer: {
-    flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
+    backgroundColor:'black',
+    padding:10,
   },
+
   container: {
     paddingHorizontal: 20,
     marginTop: 20,
   },
+  
   card: {
-    backgroundColor: "#7B5095",
+    backgroundColor: "#F2DD65",
     marginBottom: 20,
   },
 
   txt:{
-    color:"#ffb687",
+    color:"black",
     fontWeight: "bold",
   },
 
   title: {
     fontWeight: "bold",
+    fontStyle: 'italic',
     fontSize: 25,
-    color:"#ffb687",
-    
-    marginBottom: 12,
+    color:"black",
+    marginBottom: 23,
   },
 
 });
