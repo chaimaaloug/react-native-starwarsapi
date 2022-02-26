@@ -12,4 +12,9 @@ npm start
 # Project link
  
  https://expo.dev/@chaimalougsari/spacecraft
+ 
+ 
+## 1- Install Expo Go App 
+## 2- Scan the code below the launch the application
 
+<img width="355" alt="Screenshot_1" src="https://user-images.githubusercontent.com/49941834/155851311-6493d63c-1575-4dae-8158-70b7b05c5ea2.png">
